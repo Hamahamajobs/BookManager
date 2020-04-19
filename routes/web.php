@@ -18,6 +18,9 @@ Route::get('/', function () {
 })
 */;
 
+/*
+ どんなアクセスが来てもappを返す。hamada todo ->whereはなぞ。
+ */
 Route::get('/{any}', function() {
     return view('app');
 })->where('any', '.*');

@@ -26,7 +26,6 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-//hamada 自分で作成したコンポーネント（実際のvueで作成した画面を）
 Vue.component('header-component', HeaderComponent);
 
 /**
@@ -67,6 +66,7 @@ const router = new VueRouter({
     ]
 });
 
+//上記で作成した
 const app = new Vue({
     el: '#app',
     router
