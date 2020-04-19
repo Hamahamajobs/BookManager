@@ -65,8 +65,7 @@ const router = new VueRouter({
             },
     ]
 });
-
-//上記で作成した
+//コンストラクターに作成したルーター(vue特有のルーター)を入れて、Vueインスタンス作成。（60%）
 const app = new Vue({
     el: '#app',
     router

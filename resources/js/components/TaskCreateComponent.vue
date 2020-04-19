@@ -3,7 +3,7 @@
          <div class="row justify-content-center">
              <div class="col-sm-6">
                  <!-- 説明
-                 各フォームはv-modelでtaskデータとバインディングすることで、フォームにデータが入力されたら<scripts>側のtaskデータも更新されるようになっています。そして、<form v-on:submit.prevent="submit">で、フォーム送信時に先ほど定義したsubmitメソッドを呼び出すようにしています。これで、入力内容が反映されたtaskデータをsubmitメソッドでAPI送信できる状態になっています。    
+                 各フォームはv-modelでtaskデータとバインディングすることで、フォームにデータが入力されたら<scripts>側のtaskデータも更新される。そして、<fssorm v-on:submit.prevent="submit">で、フォーム送信時に先ほど定義したsubmitメソッドを呼び出す。これで、入力内容が反映されたtaskデータをsubmitメソッドでAPI送信できる状態になる。    
                  -->
                  <form v-on:submit.prevent="submit">
                      <div class="form-group row">
@@ -28,7 +28,7 @@
  <script>
    export default {
        /**　説明
-        * 空のtaskデータを用意するところは先ほどと同じです。methods の submit() メソッドで、taskデータをタスク登録APIにPOST送信する処理を書いています。また、APIによるデータ登録完了後、this.$router.push({name: 'task.list'}); でタスク一覧ページにリダイレクトしています。
+        * methods の submit() メソッドで、taskデータをタスク登録APIにPOST送信する処理。また、APIによるデータ登録完了後、this.$router.push({name: 'task.list'}); でタスク一覧ページにリダイレクト。
         */
        data: function () {
            return {
