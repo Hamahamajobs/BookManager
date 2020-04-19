@@ -42,7 +42,7 @@
 
 <script>
 /**
- * まず data には空配列の tasks を用意。そして、 methods にある getTasks() メソッドで、タスク一覧取得APIにリクエストして,そのレスポンスを先ほどの tasks の中に入れる。（このメソッドでaxiosを利用してリクエスト）そして、画面描画時にこの getTasks() メソッドが実行されるように、mounted() でメソッドを呼び出し。
+ * まず data には空配列の tasks を用意。そして、 methods にある getTasks() メソッドで、タスク一覧取得APIにリクエストして,そのレスポンスを先ほどの tasks の中に入れる。（このメソッドで先ほど話したaxiosを利用してリクエスト）そして、画面描画時にこの getTasks() メソッドが実行されるように、mounted() でメソッドを呼び出し。
  */
     export default {
         data: function () {
