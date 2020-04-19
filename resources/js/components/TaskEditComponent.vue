@@ -29,7 +29,7 @@
 <script>
     export default {
         /**
-         * タスク詳細ページとタスク登録ページでやったことを両方やっているだけです。空のtaskデータを用意し、getTask() メソッドでAPIから取得したデータをセットする。submit メソッドでは、タスク更新APIにputリクエストを送信しています。
+         *空のtaskデータを用意し、getTask() メソッドでAPIから取得したデータをセットする。submit メソッドでは、タスク更新APIにputリクエストを送信。
          */
         props: {
             taskId: String
