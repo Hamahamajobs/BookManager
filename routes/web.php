@@ -19,7 +19,7 @@ Route::get('/', function () {
 */;
 
 /*
- どんなアクセスが来てもappを返す。hamada todo ->whereはなぞ。
+ どんなアクセスが来てもappを返す。
  */
 Route::get('/{any}', function() {
     return view('app');

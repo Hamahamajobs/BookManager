@@ -47,14 +47,19 @@
     export default {
         data: function () {
             return {
+                //初期状態では、配列は空っぽになっている。通信でGETした後にここに格納される。
                 tasks: []
             }
         },
         methods: {
             getTasks() {
+                //axiosというajax通信用のライブラリーがあるのでそれを使う。Vue.jsは通信機能は普通は用意していない。
+                //URLはLaravelのルータ-に合わせてOK
                 axios.get('/api/tasks')
+                //.thenで通信が成功したあとの処理を記述している。
+                //引数のresは通信の結果、得たもの
                     .then((res) => {
-                        this.tasks = res.data;
+                        this.tasks = res.data;//res.dataで取得。引数に合わせてOK
                     });
             },
             deleteTask(id) {
@@ -65,6 +70,7 @@
                 });
             }
         },
+        //mounted()がページを読み込んだ時に行う処理？※マウントとは、既存のDOM要素をVue.jsが生成するDOM要素で置き換えること。
         mounted() {
             this.getTasks();
         }

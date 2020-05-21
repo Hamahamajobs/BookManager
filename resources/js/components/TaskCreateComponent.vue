@@ -1,11 +1,11 @@
 <template>
      <div class="container">
-         <div class="row justify-content-center">
+         <!-- <div class="row justify-content-center">
              <div class="col-sm-6">
-                 <!-- 説明
+      説明
                  各フォームはv-modelでtaskデータとバインディングすることで、フォームにデータが入力されたら<scripts>側のtaskデータも更新。そして、<form v-on:submit.prevent="submit">で、フォーム送信時に先ほど定義したsubmitメソッドを呼び出す。これで、入力内容が反映されたtaskデータをsubmitメソッドでAPI送信できる状態に。    
                  -->
-                 <form v-on:submit.prevent="submit">
+                 <!-- <form v-on:submit.prevent="submit">
                      <div class="form-group row">
                          <label for="title" class="col-sm-3 col-form-label">Title</label>
                          <input type="text" class="col-sm-9 form-control" id="title" v-model="task.title">
@@ -21,7 +21,7 @@
                      <button type="submit" class="btn btn-primary">Submit</button>
                  </form>
              </div>
-         </div>
+         </div> --> 
      </div>
  </template>
 
